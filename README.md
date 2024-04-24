@@ -2,7 +2,12 @@ This is a [Next.js](https://nextjs.org/) application prototype to use NextAuth.j
 
 ## Getting Started
 
-- Create a new client in keycloak
+- Create a new client in keycloak with the following option:
+
+  - Client authentication: ``on``
+  - Standard flow: enable
+  - Direct access grants: disable
+  - redirect uri: ``http://localhost:3000/api/auth/callback/keycloak``
 
 - configure ``.envrc``
 
